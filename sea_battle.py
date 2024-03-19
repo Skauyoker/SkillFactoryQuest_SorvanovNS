@@ -212,7 +212,7 @@ class Game:
                 except BoardWrongShipException:
                     pass
         board.begin()
-        return Board
+        return board
 
     def greet(self):
         print("  Приветсвуем вас  ")
@@ -228,10 +228,10 @@ class Game:
         while True:
             print("_" * 16)
             print("Доска пользователя:")
-            print(self.us.board())
+            print(self.us.board)
             print("-" * 16)
             print("Доска комп:")
-            print(self.ai.board())
+            print(self.ai.board)
             if num % 2 == 0:
                 print("_" * 16)
                 print("Ходит пользователь!")
