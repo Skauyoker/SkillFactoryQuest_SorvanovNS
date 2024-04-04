@@ -16,12 +16,12 @@ class CryptoConvertor:
         try:
             quote_ticker = keys[quote]
         except KeyError:
-            raise ConvertionException(f'Не правильный формат валюты "{quote}"')
+            raise ConvertionException(f'Не правильный формат валюты "{keys[quote]}"')
 
         try:
             base_ticker = keys[base]
         except KeyError:
-            raise ConvertionException(f'Не правильный формат валюты "{base}"')
+            raise ConvertionException(f'Не правильный формат валюты "{keys[base]}"')
 
         try:
             amount = float(amount)
